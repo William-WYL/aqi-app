@@ -126,7 +126,7 @@ const InfoContainer = () => {
                 <LoadScript googleMapsApiKey={import.meta.env.VITE_GOOGLE_MAPS_API_KEY}>
                   <GoogleMap
                     mapContainerStyle={mapStyles}
-                    zoom={12}
+                    zoom={8}
                     center={{ lat: location.coordinates[0], lng: location.coordinates[1] }}
                     options={{
                       disableDefaultUI: true,
