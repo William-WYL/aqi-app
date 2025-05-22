@@ -19,6 +19,7 @@ A responsive web application that displays real-time air quality data and weathe
 ### Frontend
 ## Technologies Used
   ### Core Framework
+  - **JavaScript** - Frontend programming language
   - **React 18** - Frontend JavaScript library
   - **React DOM** - React renderer for web
   - **Vite** - Next-gen frontend tooling
