@@ -1,10 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import useAirQualityStore from '../../store/airQualityStore';
 
 const NavBar = () => {
   const [cityInput, setCityInput] = useState('');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { fetchAQI, loading } = useAirQualityStore();
+
+  // Default City
+  useEffect(() => {
+    fetchAQI('Winnipeg');
+  }, [fetchAQI]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
